@@ -1,1 +1,10 @@
-{ "$schema": "https://openapi.vercel.sh/vercel.json", "functions": { "api/**/*": { "runtime": "nodejs20.x" } } }
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/**": { "runtime": "nodejs20.x" }
+  },
+  "routes": [
+    { "src": "/public/(.*)", "dest": "/public/$1" },
+    { "src": "/", "dest": "/public/index.html" }
+  ]
+}
