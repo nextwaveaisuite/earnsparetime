@@ -1,2 +1,3 @@
-# earnsparetime
-A Rewards App For Spin, Try and Earn
+# Rewards App Submission Kit
+
+Complete starter kit for deployment on Vercel with GitHub.
